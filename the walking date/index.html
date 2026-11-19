@@ -1,129 +1,336 @@
 <!DOCTYPE html>
-<html lang="pt-br" data-theme="light">
-   
+<html lang="pt-br" data-theme="dark">
+
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Walking Date</title>
+
+
     <link rel="stylesheet" href="style.css">
 </head>
- <link rel="stylesheet" href="style.css">
+
+
 <body>
+
+
     <header>
-        <button id="btn-tema">Alternar Sobrevivência (Tema)</button>
-        <h1> The Walking Date</h1>
+
+
+        <button id="btn-tema">Modo Sobrevivência ☀️</button>
+
+
+        <span id="placar-matches">Matches: 0</span>
+
+
+        <h1>The Walking Date</h1>
+
+
         <fieldset>
-        <legend>Encontre seu verdadeiro amor pós-vida</legend>
-        <nav>
-            <ul>
-                <li><a href="#">Início</a></li>
-                <li><a href="#">Benefícios</a></li>
-                <li><a href="#">Cadastro</a></li>
-            </ul>
-        </nav>
+            <legend>Encontre seu verdadeiro amor pós-vida</legend>
+
+
+            <nav>
+                <ul>
+                    <li><a href="#">Início</a></li>
+                    <li><a href="#">Benefícios</a></li>
+                    <li><a href="#">Cadastro</a></li>
+
+
+                    <button id="btn-tema-secundario" type="button">
+                        Alternar Sobrevivência (Tema)
+                    </button>
+                </ul>
+            </nav>
         </fieldset>
+
+
     </header>
+
+
+    <div id="barra-alerta">
+        <button id="fechar-alerta" type="button">X</button>
+    </div>
+
+
     <main>
-        <section id="boas-vindas">
-            <h2 > Venha até mim! </h2>
-            <figure style="text-align: center;">
-                <img src="https://st.depositphotos.com/1724125/2031/v/450/depositphotos_20310287-stock-illustration-zombie-love.jpg" 
-                alt="Casal de zumbis felizes">
-                <figcaption>Amor verdadeiro além do túmulo</figcaption>
-            </figure>
+
+
+        <section id="calculadora-zumbi">
+
+
+            <h2>Calculadora de Compatibilidade Zumbi</h2>
+
+
+            <input
+                type="number"
+                id="dias-infectado"
+                placeholder="Seus Dias infectados"
+            >
+
+
+            <input
+                type="number"
+                id="dias-parceiro"
+                placeholder="Dias do Parceiro"
+            >
+
+
+            <button id="btn-calcular" type="button">
+                Calcular Química
+            </button>
+
+
+            <p id="resultado-quimica"></p>
+
+
         </section>
+
+
+        <section id="boas-vindas">
+
+
+            <h2> Venha até mim! </h2>
+
+
+            <figure>
+
+
+                <img
+                    src="https://st.depositphotos.com/1724125/2031/v/450/depositphotos_20310287-stock-illustration-zombie-love.jpg"
+                    alt="Casal de zumbis felizes"
+                >
+
+
+                <figcaption>Amor verdadeiro além do túmulo</figcaption>
+
+
+            </figure>
+
+
+            <button class="botao-match" type="button">
+                Dar Match Sangrento
+            </button>
+
+
+        </section>
+
+
         <section id="Benefícios">
-            <h2 > Por que usar o The walking Date?</h2>
+
+
+            <h2> Por que usar o The walking Date?</h2>
+
+
             <ol>
                 <strong>
-                    <li>Encontros carnívoros</li>
-                    <li>Achar outros decompostos</li>
-                    <li>Encontrar pessoas vivas e suculentas</li>
-                    <li>Procurar companhia para longas caminhadas</li>
+                    <li>Encontros carnívoros.</li>
+                    <li>Achar outros decompostos.</li>
+                    <li>Encontrar pessoas vivas e suculentas.</li>
+                    <li>Procurar companhia para longas caminhadas.</li>
+                    <li>Seguro contra perda de membros durante o primeiro encontro.</li>
                 </strong>
             </ol>
+
+
         </section>
+
+
         <aside>
-            <h3"> Cupido zumbi - frase do dia</h3>
+
+
+            <h3> Cupido zumbi - frase do dia</h3>
+
+
             <section id="Depoimentos">
-                <article><blockquote>Desde que te vi, meu coração voltou a bater… mesmo estando morto! <cite>Zumbi apaixonado</cite></blockquote></article>
+
+
+                <article>
+
+
+                    <blockquote>
+                        Desde que te vi, meu coração voltou a bater… mesmo estando morto!
+
+
+                        <cite>Zumbi apaixonado</cite>
+                    </blockquote>
+
+
+                </article>
+
+
             </section>
+
+
         </aside>
-        <section id="faq"> 
+
+
+        <section id="faq">
+
+
             <fieldset>
-            <details style="text-align: center;">
-                <summary>Zumbis veganos são aceitos?</summary>
-                <p>NÃO!</p>
-                </fieldset>
-            </details>
-        </section>
-        <section id="planos">
-            <fieldset>
-            <table style=" text-align: center;">
-                <caption style="text-align: center;">Planos de assinatura</caption>
-                <thead>
-            <tr>
-                <th style="text-align: center;">Plano</th>
-                <th style="text-align: center;">Benefícios</th>
-                <th style="text-align: center;">Preço em Cérebros</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-               <td style="text-align: center;">Iniciante</td>
-               <td style="text-align: center;">Encontros românticos</td>
-                <td style="text-align: center;">50 cérebros</td>
-            </tr>
-            <tr>
-                <td style="text-align: center;">Premium</td>
-                <td style="text-align: center;">Encontros limitados</td>
-                <td style="text-align: center;">100 cérebros</td>
-            </tr>
-            <tr>
-                <td style="text-align: center;">Casal eterno</td>
-                <td style="text-align: center;">Amor para sempre</td>
-                <td style="text-align: center;">300 cérebros</td>
-            </tr>
-            </tbody>
-            </table>
+
+
+                <details>
+
+
+                    <summary>Zumbis veganos são aceitos?</summary>
+
+
+                    <label>NÃO!</label>
+
+
+                </details>
+
+
             </fieldset>
+
+
         </section>
+
+
+        <section id="planos">
+
+
+            <fieldset>
+
+
+                <table>
+
+
+                    <label>Planos de assinatura</label>
+
+
+                    <thead>
+                        <tr>
+                            <th>Plano</th>
+                            <th>Benefícios</th>
+                            <th>Preço em Cérebros</th>
+                        </tr>
+                    </thead>
+
+
+                    <tbody>
+
+
+                        <tr>
+                            <td>Iniciante</td>
+                            <td>Encontros românticos</td>
+                            <td>50 cérebros</td>
+                        </tr>
+
+
+                        <tr>
+                            <td>Premium</td>
+                            <td>Encontros limitados</td>
+                            <td>100 cérebros</td>
+                        </tr>
+
+
+                        <tr>
+                            <td>Casal eterno</td>
+                            <td>Amor para sempre</td>
+                            <td>300 cérebros</td>
+                        </tr>
+
+
+                    </tbody>
+
+
+                </table>
+
+
+            </fieldset>
+
+
+        </section>
+
+
         <section id="cadastro">
-            <h2 > Cadastro</h2>
-            <formaction="#" metho="POST"> 
+
+
+            <h2> Cadastro</h2>
+
+
+            <form action="#" method="POST">
+
+
                 <fieldset>
-                    <legend>Seus dados mortais</legend>
+
+
+                    <legend id="dados">Seus dados mortais</legend>
+
+
                     <label>Email:</label>
-                    <input type="text">
-                    <label>Senha:</label>
+
+
                     <input type="email">
 
 
-                    <p>Qual sua dieta?</p>
-                    <input type="radio"
-                name="dieta"> Miolos
-                    <input type="radio"
-                name="dieta"> Músculos
-                    <input type="radio"
-                name="dieta"> Ambos
+                    <label>Senha:</label>
 
 
-                <p>Nível de decomposição:</p>
-                <select>
-                    <option>Baixo</option>
-                    <option>Médio</option>
-                    <option>Alto</option>
-                </select>
-                <br><br>
-                <button type="submit"
-                    style="background-color: rgb(128, 0, 0); color: white;">
-                    Buscar partida
-                </button>
+                    <input type="text">
+
+
+                    <label id="perguntas">Qual sua dieta?</label>
+
+
+                    <input type="radio" name="dieta"> Miolos
+
+
+                    <input type="radio" name="dieta"> Músculos
+
+
+                    <input type="radio" name="dieta"> Ambos
+
+
+                    <label id="perguntas">Nível de decomposição:</label>
+
+
+                    <select>
+                        <option>Baixo</option>
+                        <option>Médio</option>
+                        <option>Alto</option>
+                    </select>
+
+
+                    <label id="preview-cracha">Crachá: ...</label>
+
+
+                    <br><br>
+                    
+                    <button type="submit">
+                        Buscar partida
+                    </button>
+
+
                 </fieldset>
+
+
+            </form>
+
+
         </section>
+
+
     </main>
+
+
     <footer>
+
+
         <small>The Walking Date - 2026</small>
+
+
     </footer>
+
+
+    <script src="script.js"></script>
+
+
 </body>
+
+
 </html>
